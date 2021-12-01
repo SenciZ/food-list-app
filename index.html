@@ -11,7 +11,7 @@
 
 <body>
 
-    <form>
+    <form id="newFoodForm">
         <input 
             type='text'
             id="foodName"
@@ -24,13 +24,14 @@
             type='text'
             id="img"
             placeholder='Paste an image URL'/>
-        <select name='rating' id="rating" >
+        <select name='rating' id="rating">
+            <option>Choose Health Level</option>
             <option>Unhealthy</option>
             <option>Somewhat Healthy</option>
             <option>Healthy</option>
             <option>Very Healthy</option>
         </select>
-        <button>Add New Food</button>
+        <button type="submit" id='addNewFoodBtn'>Add New Food</button>
     </form>
 
     <section id="food-container"></section>
