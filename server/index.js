@@ -5,7 +5,10 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
+const ctrl = require('./controller.js')
 
+app.get('/api/food', ctrl.getFoods)
+app.post('/api/food', ctrl.createFood)
 
 
 

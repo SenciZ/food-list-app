@@ -2,7 +2,7 @@ const foods = require('./db.json')
 
 module.exports = {
     getFoods: (req, res) =>{
-
+        res.status(200).send(foods)
     },
 
     deleteFood: (req,res) =>{
@@ -12,8 +12,8 @@ module.exports = {
     updateFood: (req, res) =>{
 
     },
-    
-    createFood: (req, res)=>{
 
+    createFood: (req, res)=>{
+        res.status(200).send(foods)
     }
 }

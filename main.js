@@ -3,6 +3,8 @@ newFoodForm.addEventListener('submit', submitHandler);
 
 const foodContainer = document.getElementById('food-container')
 
+const getAllFoods = () => axios.get('http://localhost:4000/api/food').then(foodCallback).catch(errCallback);
+
 const foodCallback = ({data: foods}) => renderFoods(foods);
 const errCallback = err => console.log(err)
 
@@ -34,7 +36,7 @@ function submitHandler(e){
 function createFoodCard(food){
     const foodCard = document.createElement('div')
     foodCard.classList.add('foodCard')
-    foodCard.innerHTML = `<h1>${food.name}<h1><img alt="Food Image" src=${food.imageURL}`
+    foodCard.innerHTML = `<h1>${food.name}<h1><img class="foodImage" alt="Food Image" src="${food.imageURL}">`
 
     foodContainer.appendChild(foodCard)
 }
@@ -48,3 +50,5 @@ function renderFoods(arr){
     }
 
 }
+
+getAllFoods();
