@@ -1,14 +1,17 @@
 const foods = require('./db.json')
-const foodId = 3
+let foodId = 3
 module.exports = {
     getFoods: (req, res) =>{
         res.status(200).send(foods)
     },
 
     deleteFood: (req,res) =>{
-        const {id} = req.params
-        const index = foods.findIndex(food => +food.id === +id)
+        const {id} = req.params;
+        let index = foods.findIndex(food => +food.id === +id)
         foods.splice(index, 1)
+        console.log(index)
+        console.log(id)
+        console.log(req.params)
         res.status(200).send(foods);
     },
 
@@ -18,7 +21,7 @@ module.exports = {
 
     createFood: (req, res)=>{
         const {name, imageURL, healthRating, caloriesPer100} = req.body
-        const newFood = {
+        let newFood = {
             id: foodId,
             name,
             caloriesPer100,

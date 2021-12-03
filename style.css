@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(248, 248, 248);
 }
 
 #food-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 248, 248);
     width: 90vw;
     height: 1000px;
     padding: 30px;
@@ -21,9 +25,11 @@ body{
 
 form{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 40px;
     justify-content: center;
+    background-color: rgb(0, 138, 53);
 }
 
 form input, select, button{
@@ -31,6 +37,10 @@ form input, select, button{
     margin: 5px;
     border-radius: 5px;
     border: 1px solid gray;
+}
+
+form input::placeholder{
+    color: rgba(0, 139, 30, .5);
 }
 
 .foodCard{
@@ -41,15 +51,15 @@ form input, select, button{
     align-items: center;
     background-color: rgb(255, 255, 255);
     width: 300px;
-    height: 450px;
+    height: 430px;
     border-radius: 10px;
     border: 1px solid rgb(209, 209, 209);
     box-shadow: 2px 2px 5px rgb(235, 235, 235);
 }
 
 .foodImage{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 15rem;
     margin-top: 30px;
 }
 
@@ -58,5 +68,12 @@ form input, select, button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40%;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.deleteBtn{
+    margin-top: 20px;
 }
