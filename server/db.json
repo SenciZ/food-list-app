@@ -12,5 +12,19 @@
         "caloriesPer100": "20",
         "imageURL": "https://cdn.mos.cms.futurecdn.net/atyrpYQoxdoTzmEgu8HMWE.jpg",
         "healthRating": "Very Healthy"
+    },
+    {
+        "id": 3,
+        "name": "Grapes",
+        "caloriesPer100": "90",
+        "imageURL": "https://acquirafresh.ro/224-large_default/struguri-albinegri-.jpg",
+        "healthRating": "Very Healthy"
+    },
+    {
+        "id": 4,
+        "name": "Strawberries",
+        "caloriesPer100": "80",
+        "imageURL": "https://i1.wp.com/thefrugalgirls.com/wp-content/uploads/2013/04/Strawberry-Growing-Tips-and-Tricks.jpg?resize=600%2C748&ssl=1",
+        "healthRating": "Very Healthy"
     }
 ]

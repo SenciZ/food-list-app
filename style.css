@@ -37,10 +37,15 @@ form input, select, button{
     margin: 5px;
     border-radius: 5px;
     border: 1px solid gray;
+    
 }
 
 form input::placeholder{
-    color: rgba(0, 139, 30, .5);
+    color: rgba(0, 88, 19, 0.5);
+}
+
+form select{
+    color: rgba(0, 88, 19, 0.5);
 }
 
 .foodCard{

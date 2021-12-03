@@ -1,5 +1,5 @@
 const foods = require('./db.json')
-let foodId = 3
+let foodId = 5
 module.exports = {
     getFoods: (req, res) =>{
         res.status(200).send(foods)
